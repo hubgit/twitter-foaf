@@ -1,0 +1,23 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="twitter-friend" attributes="friend" noscript>
+  <template>
+    <link rel="stylesheet" href="twitter-friend.css">
+
+    <div class="heading">
+        <span class="followers">{{ friend.count }}</span>
+        <a class="name" href="https://twitter.com/{{ friend.screen_name }}"
+            target="_blank">{{ friend.name }}</a>
+    </div>
+
+    <div layout horizontal class="info">
+        <div>
+            <img src="{{ friend.image }}" class="image">
+        </div>
+        <div class="meta" flex>
+            <div class="description">{{ friend.description }}</div>
+            <div class="status">&raquo; {{ friend.status }}</div>
+        </div>
+    </div>
+  </template>
+</polymer-element>

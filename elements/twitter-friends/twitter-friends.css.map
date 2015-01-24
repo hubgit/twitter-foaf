@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA,KAAM,CACJ,OAAO,CAAE,KAAK,CACd,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI,CACX,UAAU,CAAE,IAAI,CAGlB,SAAU,CACN,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI",
+"sources": ["../../../app/elements/twitter-friends/twitter-friends.scss"],
+"names": [],
+"file": "twitter-friends.css"
+}

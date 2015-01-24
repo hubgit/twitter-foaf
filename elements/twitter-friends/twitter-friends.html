@@ -1,0 +1,17 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/core-list/core-list.html">
+<link rel="import" href="../../bower_components/core-ajax/core-ajax.html">
+
+<polymer-element name="twitter-friends" attributes="source" noscript>
+  <template>
+    <link rel="stylesheet" href="twitter-friends.css">
+
+    <core-list data="{{ friends }}">
+        <template>
+            <twitter-friend friend="{{ model }}"></twitter-friend>
+        </template>
+    </core-list>
+
+    <core-ajax handleAs="json" response="{{ friends }}" url="{{ source }}" auto></core-ajax>
+  </template>
+</polymer-element>
